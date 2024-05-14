@@ -11,6 +11,13 @@ CSSharp Panel is a web panel for CounterStrikeSharp that includes many features 
 Running the panel made easier, you can now install the panel locally in a few more ways, and you dont have to build the panel, just install and run it! :)
 Follow the [docs](https://csspanel.dev/docs/quickstart) for more information.
 
+## Run in Docker
+
+```
+docker run -d -p 3000:3000 sanjaysinghg2u/css-panel
+```
+
+
 ## Features
 
 -   🚀 **Fast**: Built with Next.js on top of React, with a fully typed Front-end & back-end.
