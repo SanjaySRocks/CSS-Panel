@@ -12,9 +12,14 @@ Running the panel made easier, you can now install the panel locally in a few mo
 Follow the [docs](https://csspanel.dev/docs/quickstart) for more information.
 
 ## Run in Docker
-
+To make data persistent we use volume
 ```
-docker run -d -p 3000:3000 sanjaysinghg2u/css-panel
+docker create volume css_panel_data
+```
+
+Run command in detached mode
+```
+docker run -d -p 3000:3000 -v css_panel_data:/app sanjaysinghg2u/css-panel
 ```
 
 
