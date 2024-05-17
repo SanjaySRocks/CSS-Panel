@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  css-panel:
+    ports:
+        - "4000:3000"
+        
+    image: sanjaysinghg2u/css-panel
+    volumes:
+       - data:/app
+
+    environment:
+        - STEAM_API_KEY=
+        - DOMAIN=
+        - DB_HOST=
+        - DB_USER=
+        - DB_PASSWORD=
+        - DB_DATABASE=
+        - DB_PORT=
+        - MASTER_ADMIN=
+        - SESSION_SECRET=
+
+volumes:
+    data:
